@@ -1,0 +1,79 @@
+{
+  "enabled": {
+    "description": "启用插件",
+    "type": "bool",
+    "default": true
+  },
+  "llm_usage_debug": {
+    "description": "启用 LLM 消耗诊断日志",
+    "type": "bool",
+    "default": true
+  },
+  "log_context_stats": {
+    "description": "打印请求前上下文统计",
+    "type": "bool",
+    "default": true
+  },
+  "log_usage": {
+    "description": "打印响应 usage",
+    "type": "bool",
+    "default": true
+  },
+  "log_missing_usage": {
+    "description": "当 provider 未返回 usage 时打印 usage_missing",
+    "type": "bool",
+    "default": true
+  },
+  "mask_session": {
+    "description": "脱敏 session / user id",
+    "type": "bool",
+    "default": true
+  },
+  "max_probe_chars": {
+    "description": "启发式扫描最大字符数",
+    "type": "int",
+    "default": 300000,
+    "hint": "只影响来源识别时的关键字扫描上限，不会改写请求。"
+  },
+  "enable_monkey_patch_fallback": {
+    "description": "允许 monkey patch 兜底",
+    "type": "bool",
+    "default": false,
+    "hint": "当前版本优先使用官方 on_llm_request / on_llm_response hook；检测到官方 hook 可用时，该选项只保留为兼容预留。"
+  },
+  "log_call_stack": {
+    "description": "打印 LLM 请求调用栈，用于定位触发插件",
+    "type": "bool",
+    "default": false
+  },
+  "call_stack_depth": {
+    "description": "调用栈打印深度",
+    "type": "int",
+    "default": 12
+  },
+  "enable_runtime_stats": {
+    "description": "启用运行期 LLM 调用统计",
+    "type": "bool",
+    "default": true
+  },
+  "runtime_stats_max_records": {
+    "description": "最多保留最近多少条 LLM 调用记录",
+    "type": "int",
+    "default": 2000
+  },
+  "idle_warn_enabled": {
+    "description": "启用空置期间后台 LLM 调用告警日志",
+    "type": "bool",
+    "default": true
+  },
+  "idle_warn_minutes": {
+    "description": "空置告警统计窗口，单位分钟",
+    "type": "int",
+    "default": 10
+  },
+  "idle_warn_min_calls": {
+    "description": "空置告警最小后台调用次数",
+    "type": "int",
+    "default": 1
+  }
+}

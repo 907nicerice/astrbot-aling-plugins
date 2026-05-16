@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+data/
+plugin_data/
+runtime/
+cache/
+session/
+tmp/
+temp/
+
+# Secrets
+.env
+*.env
+secrets/
+keys/
+*.key
+*.pem
+*.token
+
+# Configs - keep only examples
+*_config.json
+config.json
+provider_config.json
+napcat-config.json
+docker-compose.yml
+
+# QQ / QZone / cookies
+*cookies*
+*cookie*
+*qzone_cookie*
+ntqq/
+napcat/config/
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Backups
+backup/
+backups/
+*.bak
