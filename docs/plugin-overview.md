@@ -1,16 +1,13 @@
 # Plugin Overview
 
-本仓库管理阿绫 QQ Bot 的 AstrBot 插件源码。
+本项目采用“一插件一仓库”的维护方式，完整列表以根目录 README 为准。
 
-## 插件列表
-
-- `astrbot_plugin_shared_life_context`: 管理今日生活状态、当前活动、能量水平等短周期状态。
-- `astrbot_plugin_inner_continuity`: 管理短中期情绪连续性、未闭合话题和互动余韵。
-- `astrbot_plugin_aling_memory`: 管理长期记忆、用户偏好和小细节闪回。
-- `astrbot_plugin_context_budget_guard`: 管理注入长度和 token 预算边界。
-- `astrbot_plugin_llm_usage_debug`: 统计 LLM 调用和 token 使用情况。
-- `astrbot_plugin_aling_life_dashboard`: 读取状态 JSON 并提供只读展示。
-
-## 维护原则
-
-插件之间要保持职责清晰。一个插件新增能力时，应先确认是否属于自己的边界，避免把长期记忆、当前状态、短期连续性和观测展示混在一起。
+- `astrbot_plugin_aling_memory`: 长期记忆、User Life Mirror 与上下文摘要。
+- `astrbot_plugin_inner_continuity`: 最近几轮对话的短期连续性。
+- `astrbot_plugin_companion_support`: 陪伴对话策略与风险识别。
+- `astrbot_plugin_shared_life_context`: 当天生活状态。
+- `astrbot_plugin_qzone_life_bridge`: QQ 空间生活内容桥接。
+- `astrbot_plugin_aling_life_dashboard`: 只读状态面板。
+- `astrbot_plugin_ayling_meme`: 表情意图匹配与发送。
+- `astrbot_plugin_llm_usage_debug`: 上下文和 token 调试。
+- `astrbot_plugin_persona_history_filter`: 人格历史清洁。

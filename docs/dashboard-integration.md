@@ -22,4 +22,4 @@
 - 从 `inner_continuity` 读取近期连续性摘要。
 - 从 `aling_memory` 读取长期记忆摘要或统计。
 - 从 `llm_usage_debug` 读取调用统计。
-- 不替代 `context_budget_guard` 的预算控制。
+- 不负责控制其他插件的注入预算。
